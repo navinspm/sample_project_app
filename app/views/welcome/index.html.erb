@@ -1,0 +1,53 @@
+<div class="container">
+<div class="row">
+   <div class="col-md-2">
+  </div>
+   <div class="col-md-9">
+    <h2>Projects</h2>            
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Project Title</th>
+          <th>UserName</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+       <% @projects.each do |project| %>
+        <tr>
+          <td><%= project.title %></td>
+          <td><%= project.user.name %></td>
+          <td><%= project.category.name %></td>
+        </tr>
+        <% end %>
+      </tbody>
+    </table>
+    </div>
+    <div class="col-md-2">
+  </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-3">
+  </div>
+    <div class="col-md-6">
+      <%= image_tag ('about1.png'), :class => "img-responsive" %>
+    </div>
+    <div class="col-md-3">
+    </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-3">
+  </div>
+  <div class="col-md-6">
+     <ol>
+       <li>I have used seed.rb to create data</li>
+       <li>The Tools I have used is ROR vesrsion 4.2.4, Database:Postgresql for production and Sqlite for development, Frontend: Bootstrap framework</li>
+       <li>The front end of the website is build with bootstrap framework so that the page is responsive, please visit the site from your mobile or resize the browser to see the responsiveness</li>
+     </ol>
+  </div>
+  <div class="col-md-3">
+  </div>
+</div>
