@@ -9,6 +9,7 @@
 User.delete_all
 Category.delete_all
 Project.delete_all
-user = User.create([{ name: 'Navin' }, { name: 'Alexander' },{ name: 'Kumar' }])
-category = Category.create([{ name: 'ecommerce' }, { name: 'social' }, { name: 'banking' }])
-project = Project.create([{ title: 'shopify',user_id: 1, category_id: 1 }, { title: 'facebook',user_id: 2, category_id: 2 }, { title: 'spree',user_id: 1, category_id: 1 }, { title: 'twitter',user_id: 2, category_id: 2 }, { title: 'ICICI',user_id: 3, category_id: 3 }, { title: 'linkedin',user_id: 2, category_id: 2 }])
+
+user = User.create([{ name: 'Alexander' }, { name: 'Kumar' },{ name: 'Navin' },{ name: 'Marshallow' }])
+category = Category.create([{ name: 'Banking' }, { name: 'Ecommerce' }, { name: 'Social' }])
+project = Project.create([{ title: 'shopify',user_id: 1, category_id: 2 }, { title: 'facebook',user_id: 2, category_id: 3 }, { title: 'spree',user_id: 1, category_id: 2 }, { title: 'twitter',user_id: 2, category_id: 3}, { title: 'ICICI',user_id: 3, category_id: 1 }, { title: 'linkedin',user_id: 2, category_id: 3 }, { title: 'redit',user_id: 4, category_id: 2 }, { title: 'flipkart',user_id: 2, category_id: 2 }])
